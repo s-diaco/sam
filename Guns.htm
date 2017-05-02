@@ -5,13 +5,9 @@
 
 <title>Guns</title>
  <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
- </head>
+ <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+</head>
 <body style="margin:0;background-color:#0c0e2a">>
-
-
-</div>
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
-
   <nav id='nav_bar' style="margin-top:-1%;"class="animate-bottom">
     <ul class='nav_links'>
       <li><a href="url">Home</a></li>
@@ -30,7 +26,7 @@
 <input type="text" id="search_name"  pattern="https?://.+" title="it matches with the highlited words"/>
 <input type="button" style="background-color:#001df1;width:100px;height:30px;margin-left:200px;margin-top:-25px;align:center;border:3px solid black" id="search" value="search">
 </form>
-<div id="Rifles" style="margin-top:5%;" id-"names">
+<div id="Rifles" style="margin-top:5%;" id="names">
 <a href=""><li>AK-47</li></a>
 <li>M4 Carbine</li>
 <li>M16 Carbine</li>
@@ -80,7 +76,7 @@
    <span class="dot" onclick="currentSlide(4)"></span> 
 </div>
 <div class="s"/>
-<a href="site.html"><h3 align="center" style="color:black;padding:10px"><i>Home</i></h3></a>
+<a href="index.html"><h3 align="center" style="color:black;padding:10px"><i>Home</i></h3></a>
 </div>
 </body>
 
@@ -125,7 +121,7 @@ if(jQuery.trim(search_name !='')){
 $("#names li:contains('"+search_name+"')").addClass('highlight');
 }
 if(search_name=="AK-47"){
-window.location.href = "site.html"
+window.location.href = "index.html"
 }
 
 $("#search_name").mouseleave(function(){
@@ -421,4 +417,4 @@ background-color:yellow;
 }
 
 </style>
-</html>
+</html>
